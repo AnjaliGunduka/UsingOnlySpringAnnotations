@@ -1,9 +1,12 @@
 package com.springs.Example.SpringAnnotationss;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+@Component //Non Qualified and De Captalized
 public class Samsung {
 	@Autowired
+	@Qualifier("mediaTek")
  MobileProcessor cpu;	
 public MobileProcessor getCpu() {
 	return cpu;
